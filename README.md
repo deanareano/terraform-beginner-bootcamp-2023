@@ -35,3 +35,26 @@ https://en.wikipedia.org/wiki/Chmod
 
 We need to be careful when using init because it will not rerun if we restart an existing workspace.
 https://www.gitpod.io/docs/configure/workspaces/tasks
+
+### Working with Env Vars
+
+We can list out all Environment Variables using the `env` command
+
+We can filter specific env vars using greg e.g. `env | grep AWS`
+
+#### Setting and unsetting Env Vars
+
+In the terminal we can set using `export HELLO='world'`
+
+In the terminal we can unset using `unset HELLO`
+
+We can set an env var temporarily when just running a command
+
+```sh
+HELLO='world' ./bin/print_message
+```
+
+#### Printing Env Vars
+
+We can print am emv var using echo e.g. `echo $HELLO`
+
